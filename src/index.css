@@ -1,3 +1,7 @@
 body {
     display: flex;
 }
+.bold-paragraph {
+    font-weight: bold;
+    color: rgb(202, 131, 38);
+}
