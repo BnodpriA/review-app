@@ -5,8 +5,9 @@ import './index.css'; //import css file
 
 const rootContainer = document.getElementById("root");
 const root  = ReactDomClient.createRoot(rootContainer);
+//StrictMode is a wrapper that allows you to perform a few extra checks on your React code.
 root.render(
-    <React.StrictMode> //StrictMode is a React feature that helps with debugging
+    <React.StrictMode> 
         <App />
     </React.StrictMode>
 );
