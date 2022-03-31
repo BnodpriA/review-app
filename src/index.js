@@ -1,17 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+//we will replace second namespace with third from React v18
+//import ReactDOM from "react-dom"; //interact with DOM 
+import * as ReactDomClient from "react-dom/client"; //interact with DOM
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+/**
+ * this code will be replaced by the code below
+ * 
+ * ReactDOM.render(
+    <h1>Hello World</h1>,
+    document.getElementById("root")
+)
+**/
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const rootContainer = document.getElementById("root");
+const root  = ReactDomClient.createRoot(rootContainer);
+root.render(<h1>I ❤️ Chicken</h1>);
+
+
