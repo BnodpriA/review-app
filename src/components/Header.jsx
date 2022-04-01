@@ -5,18 +5,18 @@ function Header(props) {
   return (
     <header>
         <div className="container">
-            <h1>{props.bunny}</h1>
+            <h1>{props.text}</h1>
         </div>
     </header>
   )
 }
 
 Header.defaultProps = {
-    bunny: 'Bunny'
+    text: 'Feedback UI'
 }
 
 Header.propTypes = {
-    bunny: PropTypes.string
+    text: PropTypes.string
 }
 
 export default Header
