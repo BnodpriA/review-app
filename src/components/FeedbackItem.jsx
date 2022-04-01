@@ -5,6 +5,13 @@ function FeedbackItem() {
   
   const [rating, setRating] = useState(7)
   const [text, setText] = useState('This is an example of a feedback text')
+
+  const handleClick = () => {
+      setRating((prev) => {
+          console.log(prev)
+          return prev + 1;
+      })
+  }
   
   return (
     <div className="card">
@@ -12,6 +19,7 @@ function FeedbackItem() {
         <div className="text-display">
             {text}
         </div>
+        <button onClick={handleClick}>Click</button>
     </div>
   )
 }
