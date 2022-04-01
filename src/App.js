@@ -5,8 +5,7 @@ function App() {
         <>
         <Header />
          <div className="container">
-             <FeedbackItem />
-            <h1>My App</h1>      
+             <FeedbackItem />  
         </div>
         </>
     )
