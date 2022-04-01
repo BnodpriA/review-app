@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Header(props) {
+function Header(bunny) {
   return (
     <header>
         <div className="container">
-            <h1>{props.bunny}</h1>
+            <h1>{bunny}</h1>
         </div>
     </header>
   )
